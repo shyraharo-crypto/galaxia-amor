@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nuestra Galaxia ❤️</title>
+
+<style>
+body{
+margin:0;
+background:black;
+overflow:hidden;
+font-family:Arial;
+color:white;
+}
+
+/* fondo estrellas */
+body::before{
+content:"";
+position:absolute;
+width:100%;
+height:200%;
+background:url("https://i.imgur.com/9QxZ6Kd.png");
+animation: estrellas 80s linear infinite;
+opacity:0.6;
+}
+
+@keyframes estrellas{
+from{transform:translateY(0);}
+to{transform:translateY(-1000px);}
+}
+
+/* galaxia */
+.galaxia{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:230px;
+height:230px;
+border-radius:50%;
+background:radial-gradient(circle,#a084ff,#2c065e,black);
+box-shadow:0 0 100px #a084ff;
+}
+
+/* órbita */
+.orbita{
+position:absolute;
+top:50%;
+left:50%;
+width:450px;
+height:450px;
+margin-left:-225px;
+margin-top:-225px;
+animation:girar 25s linear infinite;
+}
+
+@keyframes girar{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+/* texto */
+.texto{
+position:absolute;
+width:100%;
+text-align:center;
+top:-15px;
+font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="galaxia"></div>
+
+<div class="orbita">
+<div class="texto">
+❤️ Te amo — I love you — Je t’aime — Ti amo — Eu te amo —
+Ich liebe dich — Wo ai ni — Saranghae — Aishiteru —
+Mahal kita — Nakupenda — S’agapó — Kocham cię —
+Szeretlek — Te iubesc — Seni seviyorum —
+Ik hou van jou — Jag älskar dig — Jeg elsker dig —
+Minä rakastan sinua — Ya tebya lyublyu —
+Aku cinta kamu — Saya cinta padamu —
+Main tumse pyaar karta hoon — Ngiyakuthanda —
+Mo ni fe re — Ek het jou lief ❤️
+</div>
+</div>
+
+</body>
+</html>
